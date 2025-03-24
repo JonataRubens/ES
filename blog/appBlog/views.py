@@ -10,6 +10,6 @@ def lista_posts(request):
 
 
 def post_detail(request, pk):
-    post = get_list_or_404(Post, pk=pk)
+    post = get_list_or_404(Post, id=id)
     
-    return render(request, 'blog/lista_posts.html', {'post':post})
+    return render(request, 'pots.html', {'post':post})
