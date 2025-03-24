@@ -10,4 +10,5 @@ urlpatterns = [
     path('post/<int:pk>/',view.lista_posts, name= 'lista_posts')
 ]
 
+
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
