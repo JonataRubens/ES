@@ -15,7 +15,7 @@
                 <h5 class="card-title">{{ post.titulo }}</h5>
                 <p class="card-text">{{ post.subtitulo }}</p>
                 <p class="text-muted">{{ post.data_publicacao }}</p>
-                <a href="#" class="btn btn-primary">Link</a>
+                <a href="{% url "Post"id=post.id %}" class="btn btn-primary">Link</a>
             </div>
         </div>
     </div>
