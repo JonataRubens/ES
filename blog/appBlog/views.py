@@ -10,4 +10,4 @@ def lista_posts(request):
 
 def test_link(request, id):
     post = get_object_or_404(Post, id=id)
-    return render(request, 'Post.html', {'post': post})
+    return render(request, 'Post.html',{'post':post})
