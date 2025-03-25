@@ -12,7 +12,9 @@
   <body class="d-flex flex-column min-vh-100">
     {% include 'navbar.html' %}
     <div class="container mt-5 flex-grow-1">
-      <h1 class="text-center">Artigos Recentes</h1>
+      <h1 class="text-center">
+        {% block titleofpage %}Artigos Recentes{% endblock %}
+      </h1>
 
       {% block content %}{% endblock %}
     </div>

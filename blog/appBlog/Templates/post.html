@@ -1,0 +1,19 @@
+{% extends 'Base.html' %}
+{% load static %}
+
+{% block title %}{{post.titulo}}{% endblock %}
+{% block titleofpage %}{{post.titulo}}{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="container">
+        {% if post.imagem %}
+        <img src="{{ post.imagem.url }}" class="card-img-top img-fluid" alt="{{ post.titulo }}" style="width: 100%; height: 450px; object-fit: cover;">
+        {% endif %}
+        <div>
+            <h2 class="card-text">{{ post.subtitulo }}</h2>
+            <p>{{post.conteudo}}</p>
+            <p class="text-muted">{{ post.data_publicacao }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
