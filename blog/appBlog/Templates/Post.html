@@ -4,6 +4,16 @@
 {% block title %}{{post.titulo}}{% endblock %}
 {% block titleofpage %}{{post.titulo}}{% endblock %}
 {% block content %}
+
+<style>
+    .text-container {
+        border: 1px solid #e0e0e0;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+</style>
+<div div class="text-container">
 <div class="row">
     <div class="container">
         {% if post.imagem %}
@@ -11,9 +21,10 @@
         {% endif %}
         <div>
             <h2 class="card-text">{{ post.subtitulo }}</h2>
-            <p>{{post.conteudo |linebreaksbr }}</p>
+            <p>{{ post.conteudo | linebreaksbr }}</p>
             <p class="text-muted">{{ post.data_publicacao }}</p>
         </div>
     </div>
+</div>
 </div>
 {% endblock %}
