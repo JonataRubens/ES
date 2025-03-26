@@ -50,13 +50,13 @@ Acesse o blog em http://127.0.0.1:8000/.
 ## Estrutura do Projeto
 
 
-ES/
-│── blog/                 # Aplicação principal do blog
-│── static/               # Arquivos estáticos (CSS, JS, imagens)
-│── templates/            # Templates HTML do Django
-│── manage.py             # Comando de gerenciamento do Django
-│── requirements.txt      # Dependências do projeto
-└── README.md             # Este arquivo
+ES
+blog                 - Aplicação principal do blog
+stati              - Arquivos estáticos (CSS, JS, imagens)
+templates            - Templates HTML do Django
+manage.py             - Comando de gerenciamento do Django
+requirements.txt      - Dependências do projeto
+README.md             - Este arquivo
 
 
 # Contribuição
